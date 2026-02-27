@@ -1,106 +1,49 @@
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bitwealth Hub</title>
-
-    <!-- Firebase SDKs -->
-    <script src="https://www.gstatic.com/firebasejs/9.5.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.5.0/firebase-analytics.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.5.0/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.5.0/firebase-firestore.js"></script>
-
-    <!-- Your Firebase configuration -->
-    <script>
-        const firebaseConfig = {
-            apiKey: "AIzaSyCXEt-oVUQVo9yxO3_q2FfSTRj_jnBvFAs",
-            authDomain: "bitwealthhubb-6cf1e.firebaseapp.com",
-            projectId: "bitwealthhubb-6cf1e",
-            storageBucket: "bitwealthhubb-6cf1e.firebasestorage.app",
-            messagingSenderId: "1061683607000",
-            appId: "1:1061683607000:web:4150892ad1ed625ccaeead",
-            measurementId: "G-S2DFPNX3MT"
-        };
-
-        // Initialize Firebase
-        const app = firebase.initializeApp(firebaseConfig);
-        const analytics = firebase.analytics();
-    </script>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bitwealth Hub</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Satoshi Wealth Hub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0B0B45;
+            color: #FFD700;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #02022F;
+            padding: 50px 0;
+        }
+        h1 {
+            font-size: 50px;
+            margin: 0;
+        }
+        p {
+            font-size: 20px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            margin-top: 20px;
+            background-color: #FFD700;
+            color: #0B0B45;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 10px;
+        }
+        .btn:hover {
+            background-color: #FFC000;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to Bitwealth Hub</h1>
+        <h1>Welcome to Satoshi Wealth Hub</h1>
+        <p>Your professional Bitcoin investment platform</p>
+        <a href="#" class="btn">Start Investing</a>
     </header>
-    <main>
-        <section>
-            <h2>Register</h2>
-            <form id="register-form">
-                <input type="email" id="email" placeholder="Email" required>
-                <input type="password" id="password" placeholder="Password" required>
-                <button type="submit">Register</button>
-                <<script src="https://www.gstatic.com/firebasejs/9.1.2/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.1.2/firebase-auth.js"></script>
-<script>
-    // Your Firebase initialization code
-    const firebaseConfig = {
-        apiKey: "YOUR_API_KEY",
-        authDomain: "YOUR_AUTH_DOMAIN",
-        projectId: "YOUR_PROJECT_ID",
-        storageBucket: "YOUR_STORAGE_BUCKET",
-        messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-        appId: "YOUR_APP_ID",
-        measurementId: "YOUR_MEASUREMENT_ID"
-    };
-    const app = firebase.initializeApp(firebaseConfig);
-    const auth = firebase.auth();
-
-    // When the user clicks the registration button, the action is triggered
-    document.getElementById('registrationButton').addEventListener('click', function() {
-        firebase.auth().onAuthStateChanged(function(user) {
-            if (user) {
-                // If user is logged in, redirect to dashboard
-                window.location.href = 'dashboard.html'; // Change this to your actual dashboard URL
-            } else {
-                // If user is not logged in, prompt them to register/login
-                alert('Please register or log in to continue.');
-            }
-        });
-    });
-</script>
-         
-        </section>
-    </main>
-
-    <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-auth.js"></script>
-    <script src="app.js"></script>
 </body>
 </html>
-
-<!-- Why Choose Bitwealth Hub Section -->
-<section id="why-choose">
-    <h2>🚀 Why Choose Bitwealth Hub?</h2>
-    <ul>
-        <li><strong>High-Returns Investment Plans</strong> – Choose from our tailored BTC investment plans.</li>
-        <li><strong>Transparent & Secure</strong> – We prioritize security and transparency in every transaction.</li>
-        <li><strong>24/7 Expert Support</strong> – Our team is here to guide you every step of the way.</li>
-        <li><strong>Personalized Financial Advice</strong> – Get custom strategies based on your investment goals.</li>
-    </ul>
-</section>
-<!-- Features Section -->
-<section id="features">
-    <h2>🌐 Features</h2>
-    <ul>
-        <li><strong>Real-Time BTC Market Insights</strong> – Stay ahead with the latest Bitcoin trends.</li>
-        <li><strong>Investment Calculator</strong> – Estimate your returns with our easy-to-use tool.</li>
-        <li><strong>Secure Transactions</strong> – Your investments are protected with top-notch security.</li>
-        <li><strong>Expert Resources</strong> – Access to guides, blogs, and tutorials to improve your investing strategy.</li>
-    </ul>
-</section>
